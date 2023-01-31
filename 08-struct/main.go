@@ -6,7 +6,10 @@ type Rectangle struct {
 	length  int
 	breadth int
 }
-
+func calculateArea(rect Rectangle) int{
+	area:=rect.length*rect.breadth
+	return area
+}
 func main() {
 	rect := Rectangle{15, 28}
 
@@ -16,7 +19,7 @@ func main() {
 	// access the breadth of the struct
 	fmt.Println("Breadth:", rect.breadth)
 
-	area := rect.length * rect.breadth
+	area := calculateArea(rect)
 	fmt.Println("Area:", area)
 
 }

@@ -8,6 +8,21 @@ func isEvenOdd(number int) bool {
 	}
 	return false
 }
+func calculator(number1,number2 int,operator string) int{
+	switch operator {
+	case "+":
+		return number1+number2
+	case "-":
+		return number1-number2
+	case "*":
+		return number1*number2
+	case "/":
+		return number1/number2
+	default:
+		fmt.Println("invalid operation")
+	}
+	return -1
+}
 func main() {
 	var number int
 	fmt.Scan(&number)
